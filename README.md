@@ -44,7 +44,7 @@ In case you only want to use the collection-of generator action itself to integr
 ```yaml
 steps:
   - name: update-collection-of-list
-    uses: collection-of-lists/collection-of-update-action@v0.8.5
+    uses: khulnasoft/collection-of-update-action@v0.8.5
     with:
       github_key: ${{ secrets.GITHUB_TOKEN }}
       libraries_key: ${{ secrets.LIBRARIES_KEY }}
