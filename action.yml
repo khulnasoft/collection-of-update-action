@@ -1,0 +1,22 @@
+name: "collection-of-update-action"
+description: "🔄 GitHub Action to update a collection-of list."
+author: "Collection-of Team <info@khulnasoft.com>"
+inputs:
+  libraries_key:
+    description: "Libraries.io API Key (from https://libraries.io/api)"
+    required: true
+  github_key:
+    description: "Github API Token (from https://github.com/settings/tokens)"
+    required: false
+  projects_file:
+    description: "Projects yaml file to use for collection-of generation"
+    default: "projects.yaml"
+    required: false
+
+runs:
+  using: "docker"
+  image: "Dockerfile"
+
+branding:
+  icon: "award" # refresh-cw
+  color: "blue"
